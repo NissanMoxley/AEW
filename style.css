@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    margin 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto',sans-serif;
+
+}
+body{
+    background: url('kenny.jpg') no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+
+}
+
+
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+    height: 40px;
+}
+
+.contact-form{
+    max-width: 550px;
+    margin: 0 auto;
+    background: transparent;
+    padding: 70px;
+    border-radius: 25px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.13);
+    width: 50%;
+    height: 40px;
+}
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 25%;
+
+}
+.input-fields,
+.msg{
+    width: 48%;
+    height: 30px;
+}
+
+.input-fields .input,
+.msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 0px;
+    color: #c5ecfd;
+    width: 100%;
+    height: 40px;
+
+}
+
+.msg textarea{
+    height: 212px;
+
+}
+
+::-webkit-input-placeholder{
+
+    color: #c5ecfd;
+}
+
+.button{
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    text-transform:uppercase;
+    height: 50px;
+    width: 100%;
+    font-size: 40;
+}
+
+
+@media screen and (max-width:600px){
+    .contact-form{
+        flex-direction: column;
+
+    }
+    .msg textarea{
+        height: 200px;
+    }
+    .input-fields,
+    .msg{
+        width: 200%;
+    }
+}
